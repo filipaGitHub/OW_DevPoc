@@ -39,16 +39,14 @@ jobs:
         run: |
           sudo npm install sfdx-git-delta@latest -g
           git fetch --all
-          git --no-pager diff --name-status HEAD HEAD^
-          cat git --no-pager diff --name-status HEAD HEAD^
-          mkdir changed-sources
-          sgd --to HEAD --from HEAD^ --output changed-sources/ --generate-delta
+          mkdir changed
+          git --no-pager diff --name-status HEAD HEAD^ --output changed
           cat changed-sources/package/package.xml
           
       - uses: actions/upload-artifact@v2
         with:
           name: package check uploaded
-          path: changed-sources/    
+          path: changed/    
           
       - name: Convert Metadata
         run: sfdx force:source:convert --manifest=changed-sources/package/package.xml --outputdir=convert
