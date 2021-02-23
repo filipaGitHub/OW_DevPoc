@@ -33,6 +33,14 @@ jobs:
       - uses: sfdx-actions/setup-sfdx@v1
         with:
           sfdx-auth-url: ${{ secrets.AUTH_SECRET }}
+
+      - name: Branches Involved
+        env:
+          SOURCE_BRANCH: ${{ toJSON(github.head_ref) }}
+          TARGET_BRANCH: ${{ toJSON(github.base_ref) }}
+        run: |
+          echo "$SOURCE_BRANCH"
+          echo "$TARGET_BRANCH"    
             
       # sudo npm install sfdx-git-delta@latest -g  
       - name: Install App and Create Delta
