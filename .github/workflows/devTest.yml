@@ -1,11 +1,10 @@
-  
-name: Deploy package
+name: Deploy package dev
 
 # Controls when the action will run. 
 on:
   # Triggers the workflow on pull request event but only for the master branch
   push:
-    branches: [ main ]
+    branches: [ dev ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
