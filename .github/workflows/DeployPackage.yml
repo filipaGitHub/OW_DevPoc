@@ -47,6 +47,7 @@ jobs:
         run: |
           sudo npm install sfdx-git-delta@latest -g
           git fetch --all
+          git pull
           git status
           git --no-pager diff --name-status HEAD HEAD^
           mkdir changed-sources
