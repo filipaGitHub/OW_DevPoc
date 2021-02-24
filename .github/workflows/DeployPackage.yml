@@ -49,6 +49,7 @@ jobs:
           git fetch --all
           git pull
           git status
+          git log -3
           git --no-pager diff --name-status HEAD HEAD^
           mkdir changed-sources
           sgd --to HEAD --from HEAD^ --output changed-sources/ --generate-delta
