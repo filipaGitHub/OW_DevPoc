@@ -70,7 +70,7 @@ jobs:
           
       - uses: actions/upload-artifact@v2
         with:
-          name: package check uploaded ${{ github.actor }}
+          name: package check uploaded ${{ github.head_ref }} to ${{ github.base_ref }} ${{ github.actor }}
           path: changed-sources/    
           
       - name: Convert Metadata
