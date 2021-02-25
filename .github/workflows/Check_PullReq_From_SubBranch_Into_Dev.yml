@@ -58,13 +58,25 @@ jobs:
           DAY: "${{ steps.current-time.outputs.day }}"
         run: echo $TIME $R_TIME $F_TIME $YEAR $DAY
         
-      - name: Get current time
+      - name: Get current time apagar
         uses: gerred/actions/current-time@master
         id: current-time2
       - name: Use current time
         env:
           TIME: "${{ steps.current-time.outputs.time }}"
         run: echo $TIME  
+        
+      - name: Get Time novo
+        id: time
+        uses: nanzm/get-time-action@v1.1
+        with:
+          timeZone: 8
+          format: 'YYYY-MM-DD-HH-mm-ss'
+      - name: Usage
+        env:
+          TIME: "${{ steps.time.outputs.time }}"
+        run: |
+          echo $TIME 
             
       # sudo npm install sfdx-git-delta@latest -g  
       - name: Install App and Create Delta
@@ -78,7 +90,7 @@ jobs:
           
       - uses: actions/upload-artifact@v2
         with:
-          name: package check uploaded from ${{ github.head_ref }} to ${{ github.base_ref }} by ${{ github.actor }} ${{ steps.current-time.outputs.day }} - ${{ steps.current-time.outputs.month }} - ${{ steps.current-time.outputs.year }}
+          name: package check uploaded from ${{ github.head_ref }} to ${{ github.base_ref }} by ${{ github.actor }} ${{ steps.current-time.outputs.day }} - ${{ steps.current-time.outputs.month }} - ${{ steps.current-time.outputs.year }} ${{ steps.time.outputs.time }}
           path: changed-sources/    
           
       - name: Convert Metadata
