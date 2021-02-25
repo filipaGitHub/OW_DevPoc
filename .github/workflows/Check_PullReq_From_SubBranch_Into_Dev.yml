@@ -70,8 +70,7 @@ jobs:
           
       - uses: actions/upload-artifact@v2
         with:
-          name: package check uploaded from ${{ github.head_ref }} to ${{ github.base_ref }} by ${{ github.actor }} ${{ steps.current-time.outputs.day }} - ${{ steps.current-time.outputs.month }} - ${{ steps.current-time.outputs.year }} $(date +'%Y-%m-%dT%H:%M:%S')
-          
+          name: package check uploaded from ${{ github.head_ref }} to ${{ github.base_ref }} by ${{ github.actor }} ${{ steps.current-time.outputs.day }} - ${{ steps.current-time.outputs.month }} - ${{ steps.current-time.outputs.year }} ff1 ${{ steps.current-time.outputs.time }} ff2 ${{ steps.current-time.outputs.readableTime }} ff3 ${{ steps.current-time.outputs.formattedTime }}
           path: changed-sources/    
           
       - name: Convert Metadata
