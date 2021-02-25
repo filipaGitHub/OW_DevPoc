@@ -70,7 +70,7 @@ jobs:
         id: time
         uses: nanzm/get-time-action@v1.1
         with:
-          timeZone: 8
+          timeZone: 0
           format: 'YYYY-MM-DD-HH-mm-ss'
       - name: Usage
         env:
@@ -90,7 +90,7 @@ jobs:
           
       - uses: actions/upload-artifact@v2
         with:
-          name: package check uploaded from ${{ github.head_ref }} to ${{ github.base_ref }} by ${{ github.actor }} ${{ steps.current-time.outputs.day }} - ${{ steps.current-time.outputs.month }} - ${{ steps.current-time.outputs.year }} ${{ steps.time.outputs.time }}
+          name: package check uploaded from ${{ github.head_ref }} to ${{ github.base_ref }} by ${{ github.actor }} ${{ steps.time.outputs.time }}
           path: changed-sources/    
           
       - name: Convert Metadata
