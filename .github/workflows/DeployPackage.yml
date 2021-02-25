@@ -47,9 +47,9 @@ jobs:
         run: |
           sudo npm install sfdx-git-delta@latest -g
           git fetch --all
-          git --no-pager diff --name-status $SOURCE_BRANCH origin/main
+          git --no-pager diff --name-status HEAD~1 HEAD~2
           mkdir changed-sources
-          sgd --to $SOURCE_BRANCH --from origin/main --repo . --output changed-sources/ --generate-delta
+          sgd --to HEAD~1 --from HEAD~2 --repo . --output changed-sources/ --generate-delta
           cat changed-sources/package/package.xml
           
       - uses: actions/upload-artifact@v2
