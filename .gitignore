@@ -36,4 +36,4 @@ Thumbs.db
 ehthumbs.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
-.github/workflows/DeployPackage.yml
+.github/workflows/*
