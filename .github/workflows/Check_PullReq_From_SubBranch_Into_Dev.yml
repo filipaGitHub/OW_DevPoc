@@ -70,7 +70,7 @@ jobs:
           
       - uses: actions/upload-artifact@v2
         with:
-          name: package check uploaded $SOURCE_BRANCH to $TARGET_BRANCH ${{ toJSON(github.actor) }} $TIME $R_TIME $F_TIME $YEAR ${{ steps.current-time.outputs.day }}
+          name: package check uploaded ${{ toJSON(github.head_ref) }} to ${{ toJSON(github.base_ref) }} ${{ toJSON(github.actor) }} ${{ toJSON(steps.current-time.outputs.formattedTime) }}
           path: changed-sources/    
           
       - name: Convert Metadata
