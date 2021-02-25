@@ -37,9 +37,11 @@ jobs:
         env:
           SOURCE_BRANCH: ${{ toJSON(github.head_ref) }}
           TARGET_BRANCH: ${{ toJSON(github.base_ref) }}
+          USER: ${{ toJSON(github.actor) }}
         run: |
           echo "$SOURCE_BRANCH"
           echo "$TARGET_BRANCH"
+           echo "$USER"
       
       - name: Get current time
         uses: 1466587594/get-current-time@v2
@@ -68,7 +70,7 @@ jobs:
           
       - uses: actions/upload-artifact@v2
         with:
-          name: package check uploaded $TIME $R_TIME $F_TIME $YEAR $DAY
+          name: package check uploaded $SOURCE_BRANCH to $TARGET_BRANCH ${{ toJSON(github.actor) }} $TIME $R_TIME $F_TIME $YEAR ${{ steps.current-time.outputs.day }}
           path: changed-sources/    
           
       - name: Convert Metadata
