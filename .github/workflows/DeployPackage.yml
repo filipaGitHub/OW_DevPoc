@@ -38,9 +38,23 @@ jobs:
         env:
           SOURCE_BRANCH: ${{ toJSON(github.head_ref) }}
           TARGET_BRANCH: ${{ toJSON(github.base_ref) }}
+          USER: ${{ toJSON(github.actor) }}
         run: |
           echo "$SOURCE_BRANCH"
           echo "$TARGET_BRANCH"
+          echo "$USER"
+          
+      - name: Get Time
+        id: time
+        uses: nanzm/get-time-action@v1.1
+        with:
+          timeZone: 0
+          format: 'DD-MM-YYYY  HH-mm-ss'
+      - name: Usage
+        env:
+          TIME: "${{ steps.time.outputs.time }}"
+        run: |
+          echo $TIME    
             
       # sudo npm install sfdx-git-delta@latest -g  
       - name: Install App and Create Delta
@@ -54,7 +68,7 @@ jobs:
           
       - uses: actions/upload-artifact@v2
         with:
-          name: package check uploaded
+          name: package check uploaded from ${{ github.head_ref }} to ${{ github.base_ref }} by ${{ github.actor }} ${{ steps.time.outputs.time }}
           path: changed-sources/    
           
       - name: Convert Metadata
