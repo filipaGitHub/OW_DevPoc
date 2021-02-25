@@ -43,7 +43,7 @@ jobs:
           echo "$TARGET_BRANCH"
           echo "$USER"
         
-      - name: Get Time novo
+      - name: Get Time
         id: time
         uses: nanzm/get-time-action@v1.1
         with:
