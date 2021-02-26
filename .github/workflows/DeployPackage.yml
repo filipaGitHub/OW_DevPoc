@@ -39,6 +39,7 @@ jobs:
           SOURCE_BRANCH: ${{ toJSON(github.head_ref) }}
           TARGET_BRANCH: ${{ toJSON(github.base_ref) }}
           USER: ${{ toJSON(github.actor) }}
+          PREVIOUS_COMMIT: HEAD^
         run: |
           echo "$SOURCE_BRANCH"
           echo "$TARGET_BRANCH"
@@ -61,9 +62,9 @@ jobs:
         run: |
           sudo npm install sfdx-git-delta@latest -g
           git fetch --all
-          git --no-pager diff --name-status HEAD HEAD^
+          git --no-pager diff --name-status HEAD $PREVIOUS_COMMIT
           mkdir changed-sources
-          sgd --to HEAD --from HEAD^ --repo . --output changed-sources/ --generate-delta
+          sgd --to HEAD --from $PREVIOUS_COMMIT --repo . --output changed-sources/ --generate-delta
           cat changed-sources/package/package.xml
           
       - uses: actions/upload-artifact@v2
