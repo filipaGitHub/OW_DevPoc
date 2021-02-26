@@ -39,7 +39,7 @@ jobs:
           SOURCE_BRANCH: ${{ toJSON(github.head_ref) }}
           TARGET_BRANCH: ${{ toJSON(github.base_ref) }}
           USER: ${{ toJSON(github.actor) }}
-          PREVIOUS_COMMIT: ${{ toJSON("HEAD^") }}
+          PREVIOUS_COMMIT: HEAD^
         run: |
           echo "$SOURCE_BRANCH"
           echo "$TARGET_BRANCH"
