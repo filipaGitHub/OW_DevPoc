@@ -46,6 +46,11 @@ jobs:
           echo "$USER"
           echo "$PREVIOUS_COMMIT"
           
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"    
+          
       - name: Get Time
         id: time
         uses: nanzm/get-time-action@v1.1
