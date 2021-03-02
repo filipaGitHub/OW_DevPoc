@@ -31,7 +31,8 @@ jobs:
           
       # Authorize ouserlves, the server key was decrypted by the previous step
       - name: 'Authorize'
-        run: sfdx force:auth:jwt:grant --clientid="3MVG9od6vNol.eBgenpD7BzVd1JXWRRzrOT.rgigZgmheNehLcwz0TGRaV_eTix.zdGYwMkcJP0LAgcaowvO9" --username="filipa.martins@prod.oneweb.salesforce.devpoc" --jwtkeyfile assets/server.key --setdefaultdevhubusername --setalias=OW_DevPoc
+        run: sfdx force:auth:jwt:grant --clientid=${{secrets.CONSUMER_KEY}} --username=${{secrets.USERNAME}} --jwtkeyfile assets/server.key --setdefaultdevhubusername --setalias=OW_DevPoc -r https://test.salesforce.com
+
           
       - name: Branches Involved
         env:
@@ -74,4 +75,4 @@ jobs:
         run: sfdx force:source:convert --manifest=changed-sources/package/package.xml --outputdir=convert
 
       - name: Run Tests and Deploy
-        run: sfdx force:mdapi:deploy --deploydir=convert --checkonly -w30
+        run: sfdx force:mdapi:deploy --deploydir=convert --checkonly -u ${{secrets.USERNAME}} -w30
