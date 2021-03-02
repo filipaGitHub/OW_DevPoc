@@ -31,7 +31,8 @@ jobs:
           
       # Authorize ouserlves, the server key was decrypted by the previous step
       - name: 'Authorize'
-        run: sfdx force:auth:jwt:grant --clientid="3MVG9od6vNol.eBgenpD7BzVd1JXWRRzrOT.rgigZgmheNehLcwz0TGRaV_eTix.zdGYwMkcJP0LAgcaowvO9" --username="filipa.martins@prod.oneweb.salesforce.devpoc" --jwtkeyfile assets/server.key --setdefaultdevhubusername --setalias=OW_DevPoc
+        run: sfdx force:auth:jwt:grant --clientid="3MVG9od6vNol.eBgenpD7BzVd1JXWRRzrOT.rgigZgmheNehLcwz0TGRaV_eTix.zdGYwMkcJP0LAgcaowvO9" --username="filipa.martins@prod.oneweb.salesforce.devpoc" --jwtkeyfile assets/server.key --setdefaultdevhubusername --setalias=OW_DevPoc -r https://test.salesforce.com
+
           
       - name: Branches Involved
         env:
