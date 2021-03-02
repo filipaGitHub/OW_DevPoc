@@ -30,9 +30,9 @@ jobs:
           tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
           ./sfdx-cli/install
           
-      - uses: sfdx-actions/setup-sfdx@v1
-        with:
-          sfdx-auth-url: ${{ secrets.AUTH_SECRET }}
+      # Authorize ouserlves, the server key was decrypted by the previous step
+      - name: 'Authorize'
+        run: sfdx force:auth:jwt:grant --clientid=${{secrets.CONSUMER_KEY}} --username=${{secrets.USERNAME}} --jwtkeyfile assets/server.key --setdefaultdevhubusername --setalias=OW_DevPoc -r https://test.salesforce.com
 
       - name: Branches Involved
         env:
@@ -82,4 +82,4 @@ jobs:
         run: sfdx force:source:convert --manifest=changed-sources/package/package.xml --outputdir=convert
 
       - name: 'Run Tests and Deploy'
-        run: sfdx force:mdapi:deploy --deploydir=convert -w30
+        run: sfdx force:mdapi:deploy --deploydir=convert -u ${{secrets.USERNAME}} -w30
