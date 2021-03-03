@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Lead Priority --></label>
+    <name>OW_Lead_Priority__c</name>
+    <picklistValues>
+        <masterLabel>Level 1 Priority response</masterLabel>
+        <translation><!-- Level 1 Priority response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Level 2 Low-priority response</masterLabel>
+        <translation><!-- Level 2 Low-priority response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Level 3 Response not required</masterLabel>
+        <translation><!-- Level 3 Response not required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Level 4 Spam / Ignore</masterLabel>
+        <translation><!-- Level 4 Spam / Ignore --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

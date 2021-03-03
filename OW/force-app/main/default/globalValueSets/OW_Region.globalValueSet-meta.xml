@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>NA</fullName>
+        <default>false</default>
+        <label>NA</label>
+    </customValue>
+    <customValue>
+        <fullName>LA</fullName>
+        <default>false</default>
+        <label>LA</label>
+    </customValue>
+    <customValue>
+        <fullName>Europe &amp; CIS</fullName>
+        <default>false</default>
+        <label>Europe &amp; CIS</label>
+    </customValue>
+    <customValue>
+        <fullName>ME</fullName>
+        <default>false</default>
+        <label>ME</label>
+    </customValue>
+    <customValue>
+        <fullName>Africa</fullName>
+        <default>false</default>
+        <label>Africa</label>
+    </customValue>
+    <customValue>
+        <fullName>APAC</fullName>
+        <default>false</default>
+        <label>APAC</label>
+    </customValue>
+    <customValue>
+        <fullName>Global</fullName>
+        <default>false</default>
+        <label>Global</label>
+    </customValue>
+    <masterLabel>Region</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

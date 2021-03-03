@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OW_Closed_Lost_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Closed/Lost Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Project Cancelled</fullName>
+                <default>false</default>
+                <label>Project Cancelled</label>
+            </value>
+            <value>
+                <fullName>Lost to GEO competitor</fullName>
+                <default>false</default>
+                <label>Lost to GEO competitor</label>
+            </value>
+            <value>
+                <fullName>Lost to LEO competitor</fullName>
+                <default>false</default>
+                <label>Lost to LEO competitor</label>
+            </value>
+            <value>
+                <fullName>Lost to MEO competitor</fullName>
+                <default>false</default>
+                <label>Lost to MEO competitor</label>
+            </value>
+            <value>
+                <fullName>Lost to Fiber/Microwave</fullName>
+                <default>false</default>
+                <label>Lost to Fiber/Microwave</label>
+            </value>
+            <value>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+                <label>Pricing</label>
+            </value>
+            <value>
+                <fullName>Timing</fullName>
+                <default>false</default>
+                <label>Timing</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

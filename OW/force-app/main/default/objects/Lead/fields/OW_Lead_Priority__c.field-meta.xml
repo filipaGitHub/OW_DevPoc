@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OW_Lead_Priority__c</fullName>
+    <externalId>false</externalId>
+    <label>Lead Priority</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Level 1 Priority response</fullName>
+                <default>false</default>
+                <label>Level 1 Priority response</label>
+            </value>
+            <value>
+                <fullName>Level 2 Low-priority response</fullName>
+                <default>false</default>
+                <label>Level 2 Low-priority response</label>
+            </value>
+            <value>
+                <fullName>Level 3 Response not required</fullName>
+                <default>false</default>
+                <label>Level 3 Response not required</label>
+            </value>
+            <value>
+                <fullName>Level 4 Spam / Ignore</fullName>
+                <default>false</default>
+                <label>Level 4 Spam / Ignore</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

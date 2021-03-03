@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OW_Functional_Area__c</fullName>
+    <externalId>false</externalId>
+    <label>Functional Area</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Strategic Rationale</fullName>
+                <default>false</default>
+                <label>Strategic Rationale</label>
+            </value>
+            <value>
+                <fullName>Product Proposition</fullName>
+                <default>false</default>
+                <label>Product Proposition</label>
+            </value>
+            <value>
+                <fullName>Pricing &amp; Yield</fullName>
+                <default>false</default>
+                <label>Pricing &amp; Yield</label>
+            </value>
+            <value>
+                <fullName>Systems Engineering</fullName>
+                <default>false</default>
+                <label>Systems Engineering</label>
+            </value>
+            <value>
+                <fullName>Regulatory</fullName>
+                <default>false</default>
+                <label>Regulatory</label>
+            </value>
+            <value>
+                <fullName>SNP - Satellite Network Provider</fullName>
+                <default>false</default>
+                <label>SNP - Satellite Network Provider</label>
+            </value>
+            <value>
+                <fullName>UT - User Terminal</fullName>
+                <default>false</default>
+                <label>UT - User Terminal</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sales Area --></label>
+    <name>OW_Sales_Area__c</name>
+    <picklistValues>
+        <masterLabel>APAC</masterLabel>
+        <translation><!-- APAC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Africa</masterLabel>
+        <translation><!-- Africa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aviation - BU</masterLabel>
+        <translation><!-- Aviation - BU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enterprise – BU</masterLabel>
+        <translation><!-- Enterprise – BU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Europe &amp; CIS</masterLabel>
+        <translation><!-- Europe &amp; CIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government - BU</masterLabel>
+        <translation><!-- Government - BU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LA</masterLabel>
+        <translation><!-- LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ME</masterLabel>
+        <translation><!-- ME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maritime - BU</masterLabel>
+        <translation><!-- Maritime - BU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

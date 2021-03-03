@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Trade Show</fullName>
+        <default>false</default>
+        <label>Trade Show</label>
+    </customValue>
+    <customValue>
+        <fullName>Email Inquiry</fullName>
+        <default>false</default>
+        <label>Email Inquiry</label>
+    </customValue>
+    <customValue>
+        <fullName>Referral</fullName>
+        <default>false</default>
+        <label>Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>Purchased List</fullName>
+        <default>false</default>
+        <label>Purchased List</label>
+    </customValue>
+    <customValue>
+        <fullName>Existing Customer</fullName>
+        <default>false</default>
+        <label>Existing Customer</label>
+    </customValue>
+    <customValue>
+        <fullName>Existing Contact</fullName>
+        <default>false</default>
+        <label>Existing Contact</label>
+    </customValue>
+    <customValue>
+        <fullName>Website</fullName>
+        <default>false</default>
+        <label>Website</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Event</fullName>
+        <default>false</default>
+        <label>Other Event</label>
+    </customValue>
+    <masterLabel>Lead Source</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

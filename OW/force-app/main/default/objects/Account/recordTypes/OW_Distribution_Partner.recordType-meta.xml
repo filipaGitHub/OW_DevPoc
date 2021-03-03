@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OW_Distribution_Partner</fullName>
+    <active>true</active>
+    <label>Distribution Partner</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Email Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>End User</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MNO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Satellite Operator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TELCO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OW_NDA__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UR - Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UR - OW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OW_Region__c</picklist>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Africa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe %26 CIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OW_Sales_Area__c</picklist>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Africa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aviation - BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise %E2%80%93 BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe %26 CIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government - BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maritime - BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OW_Trade_Show__c</picklist>
+        <values>
+            <fullName>5G Asia %28techxlr8%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5G World Summit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AEA international Convention - Avionics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APAC spectrum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APEX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aircraft interiors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arctic Shipping Forum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asian Business Aviation Conference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australasia Sat Forum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cabsat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capacity Media%2C Latam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capacity Middle East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Caribbean Telecommunications Union %28CTU%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communicasia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connecta%2C Mexico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connected Aircraft China Congress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connected Aircraft Summit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DESI - Gov</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Sea Mining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Ship - Big Data Oslo Norshipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Ship - iShipping Conference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Ship Athens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dubai Airshow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ft Lauderdale Boat Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBC - Satcom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Telecoms Week%2C Atlanta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LAAD %28Gov%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latam 5G and LTE conference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MWC Barcelona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MWC Shanghai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monaco Yacht Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NAB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NBAA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nor shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paris Airshow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Satellite 2019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sea Asia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seatrade Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Superyacht Forum</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Distribution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End Customer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

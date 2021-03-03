@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>5G Asia (techxlr8)</fullName>
+        <default>false</default>
+        <label>5G Asia (techxlr8)</label>
+    </customValue>
+    <customValue>
+        <fullName>5G World Summit</fullName>
+        <default>false</default>
+        <label>5G World Summit</label>
+    </customValue>
+    <customValue>
+        <fullName>AEA international Convention - Avionics</fullName>
+        <default>false</default>
+        <label>AEA international Convention - Avionics</label>
+    </customValue>
+    <customValue>
+        <fullName>Aircraft interiors</fullName>
+        <default>false</default>
+        <label>Aircraft interiors</label>
+    </customValue>
+    <customValue>
+        <fullName>APAC spectrum</fullName>
+        <default>false</default>
+        <label>APAC spectrum</label>
+    </customValue>
+    <customValue>
+        <fullName>APEX</fullName>
+        <default>false</default>
+        <label>APEX</label>
+    </customValue>
+    <customValue>
+        <fullName>Arctic Shipping Forum</fullName>
+        <default>false</default>
+        <label>Arctic Shipping Forum</label>
+    </customValue>
+    <customValue>
+        <fullName>Asian Business Aviation Conference</fullName>
+        <default>false</default>
+        <label>Asian Business Aviation Conference</label>
+    </customValue>
+    <customValue>
+        <fullName>Australasia Sat Forum</fullName>
+        <default>false</default>
+        <label>Australasia Sat Forum</label>
+    </customValue>
+    <customValue>
+        <fullName>Cabsat</fullName>
+        <default>false</default>
+        <label>Cabsat</label>
+    </customValue>
+    <customValue>
+        <fullName>Capacity Media, Latam</fullName>
+        <default>false</default>
+        <label>Capacity Media, Latam</label>
+    </customValue>
+    <customValue>
+        <fullName>Capacity Middle East</fullName>
+        <default>false</default>
+        <label>Capacity Middle East</label>
+    </customValue>
+    <customValue>
+        <fullName>Caribbean Telecommunications Union (CTU)</fullName>
+        <default>false</default>
+        <label>Caribbean Telecommunications Union (CTU)</label>
+    </customValue>
+    <customValue>
+        <fullName>Communicasia</fullName>
+        <default>false</default>
+        <label>Communicasia</label>
+    </customValue>
+    <customValue>
+        <fullName>Connecta, Mexico</fullName>
+        <default>false</default>
+        <label>Connecta, Mexico</label>
+    </customValue>
+    <customValue>
+        <fullName>Connected Aircraft China Congress</fullName>
+        <default>false</default>
+        <label>Connected Aircraft China Congress</label>
+    </customValue>
+    <customValue>
+        <fullName>Connected Aircraft Summit</fullName>
+        <default>false</default>
+        <label>Connected Aircraft Summit</label>
+    </customValue>
+    <customValue>
+        <fullName>Deep Sea Mining</fullName>
+        <default>false</default>
+        <label>Deep Sea Mining</label>
+    </customValue>
+    <customValue>
+        <fullName>DESI - Gov</fullName>
+        <default>false</default>
+        <label>DESI - Gov</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Ship Athens</fullName>
+        <default>false</default>
+        <label>Digital Ship Athens</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Ship - Big Data Oslo Norshipping</fullName>
+        <default>false</default>
+        <label>Digital Ship - Big Data Oslo Norshipping</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Ship - iShipping Conference</fullName>
+        <default>false</default>
+        <label>Digital Ship - iShipping Conference</label>
+    </customValue>
+    <customValue>
+        <fullName>Dubai Airshow</fullName>
+        <default>false</default>
+        <label>Dubai Airshow</label>
+    </customValue>
+    <customValue>
+        <fullName>Europort</fullName>
+        <default>false</default>
+        <label>Europort</label>
+    </customValue>
+    <customValue>
+        <fullName>Ft Lauderdale Boat Show</fullName>
+        <default>false</default>
+        <label>Ft Lauderdale Boat Show</label>
+    </customValue>
+    <customValue>
+        <fullName>IBC - Satcom</fullName>
+        <default>false</default>
+        <label>IBC - Satcom</label>
+    </customValue>
+    <customValue>
+        <fullName>International Telecoms Week, Atlanta</fullName>
+        <default>false</default>
+        <label>International Telecoms Week, Atlanta</label>
+    </customValue>
+    <customValue>
+        <fullName>LAAD (Gov)</fullName>
+        <default>false</default>
+        <label>LAAD (Gov)</label>
+    </customValue>
+    <customValue>
+        <fullName>Latam 5G and LTE conference</fullName>
+        <default>false</default>
+        <label>Latam 5G and LTE conference</label>
+    </customValue>
+    <customValue>
+        <fullName>Monaco Yacht Show</fullName>
+        <default>false</default>
+        <label>Monaco Yacht Show</label>
+    </customValue>
+    <customValue>
+        <fullName>MWC Barcelona</fullName>
+        <default>false</default>
+        <label>MWC Barcelona</label>
+    </customValue>
+    <customValue>
+        <fullName>MWC Shanghai</fullName>
+        <default>false</default>
+        <label>MWC Shanghai</label>
+    </customValue>
+    <customValue>
+        <fullName>NAB</fullName>
+        <default>false</default>
+        <label>NAB</label>
+    </customValue>
+    <customValue>
+        <fullName>NBAA</fullName>
+        <default>false</default>
+        <label>NBAA</label>
+    </customValue>
+    <customValue>
+        <fullName>Nor shipping</fullName>
+        <default>false</default>
+        <label>Nor shipping</label>
+    </customValue>
+    <customValue>
+        <fullName>Paris Airshow</fullName>
+        <default>false</default>
+        <label>Paris Airshow</label>
+    </customValue>
+    <customValue>
+        <fullName>Satellite 2019</fullName>
+        <default>false</default>
+        <label>Satellite 2019</label>
+    </customValue>
+    <customValue>
+        <fullName>Sea Asia</fullName>
+        <default>false</default>
+        <label>Sea Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>Seatrade Europe</fullName>
+        <default>false</default>
+        <label>Seatrade Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>Superyacht Forum</fullName>
+        <default>false</default>
+        <label>Superyacht Forum</label>
+    </customValue>
+    <masterLabel>Trade Show</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

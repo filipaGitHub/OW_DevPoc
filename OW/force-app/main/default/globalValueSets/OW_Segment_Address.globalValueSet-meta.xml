@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CBH</fullName>
+        <default>false</default>
+        <label>CBH</label>
+    </customValue>
+    <customValue>
+        <fullName>Enterprise</fullName>
+        <default>false</default>
+        <label>Enterprise</label>
+    </customValue>
+    <customValue>
+        <fullName>Maritime</fullName>
+        <default>false</default>
+        <label>Maritime</label>
+    </customValue>
+    <customValue>
+        <fullName>Government</fullName>
+        <default>false</default>
+        <label>Government</label>
+    </customValue>
+    <customValue>
+        <fullName>Business Aviation</fullName>
+        <default>false</default>
+        <label>Business Aviation</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Aviation</fullName>
+        <default>false</default>
+        <label>Commercial Aviation</label>
+    </customValue>
+    <masterLabel>Segment Address</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
