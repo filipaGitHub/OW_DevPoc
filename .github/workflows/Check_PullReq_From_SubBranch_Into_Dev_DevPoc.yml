@@ -82,5 +82,7 @@ jobs:
       - name: Convert Metadata
         run: sfdx force:source:convert --manifest=changed-sources/package/package.xml --outputdir=convert
 
+      # run: sfdx force:mdapi:deploy --deploydir=convert --checkonly -u ${{secrets.USERNAME}} -w30 
+      # run: sfdx force:mdapi:deploy --deploydir=convert --checkonly -u ${{secrets.USERNAME}} --testlevel RunSpecifiedTests --runtests CreateOppTest.cls -w30 
       - name: Run Tests and Deploy
-         run: sfdx force:mdapi:deploy --deploydir=convert --checkonly -u ${{secrets.USERNAME}} -w30
+        run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunSpecifiedTests --runtests CreateOppTest --checkonly -u ${{secrets.USERNAME}} -w30
