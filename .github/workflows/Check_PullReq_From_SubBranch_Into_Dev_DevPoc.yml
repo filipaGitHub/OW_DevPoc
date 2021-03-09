@@ -85,4 +85,4 @@ jobs:
       # run: sfdx force:mdapi:deploy --deploydir=convert --checkonly -u ${{secrets.USERNAME}} -w30 
       # run: sfdx force:mdapi:deploy --deploydir=convert --checkonly -u ${{secrets.USERNAME}} --testlevel RunSpecifiedTests --runtests CreateOppTest.cls -w30 
       - name: Run Tests and Deploy
-         run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunLocalTests --checkonly -u ${{secrets.USERNAME}} -w30
+         run: sfdx force:mdapi:deploy --deploydir=convert --checkonly -u ${{secrets.USERNAME}} -w30
