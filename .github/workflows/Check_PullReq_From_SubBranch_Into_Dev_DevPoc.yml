@@ -69,6 +69,10 @@ jobs:
           mkdir changed-sources
           sgd --to $SOURCE_BRANCH --from origin/dev --repo . --output changed-sources/ --generate-delta
           cat changed-sources/package/package.xml
+
+      - uses: sfdx-actions/setup-pmd@v1
+      - name: run-pmd
+        run: pmd -d ./force-app/main/default/classes -R pmd_rules.xml -f text    
           
       - uses: actions/upload-artifact@v2
         with:
