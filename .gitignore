@@ -37,3 +37,4 @@ ehthumbs.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
 .github/workflows/*
+force-app/main/default/classes/CreateAccountTest.cls
