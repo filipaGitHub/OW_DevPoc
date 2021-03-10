@@ -69,6 +69,10 @@ jobs:
           mkdir changed-sources
           sgd --to $SOURCE_BRANCH --from origin/dev --repo . --output changed-sources/ --generate-delta
           cat changed-sources/package/package.xml
+
+      - uses: sfdx-actions/setup-pmd@v1
+      - name: run-pmd
+        run: pmd -d ./changed-sources/force-app/main/default/classes -R ./force-app/main/default/classes/pmd_rules.xml -f text    
           
       - uses: actions/upload-artifact@v2
         with:
@@ -78,5 +82,16 @@ jobs:
       - name: Convert Metadata
         run: sfdx force:source:convert --manifest=changed-sources/package/package.xml --outputdir=convert
 
+      # linux script
+      - name: Get Test Classes
+        run: |
+          for entry in "$changed-sources"/*
+          do
+            echo "$entry"
+          done
+
+      # run: sfdx force:mdapi:deploy --deploydir=convert --checkonly -u ${{secrets.USERNAME}} -w30 
+      # run: sfdx force:mdapi:deploy --deploydir=convert --checkonly -u ${{secrets.USERNAME}} --testlevel RunSpecifiedTests --runtests CreateOppTest.cls -w30
+      # run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunSpecifiedTests --runtests ./changed-sources/force-app/main/default/classes --checkonly -u ${{secrets.USERNAME}} -w30 
       - name: Run Tests and Deploy
         run: sfdx force:mdapi:deploy --deploydir=convert --checkonly -u ${{secrets.USERNAME}} -w30
