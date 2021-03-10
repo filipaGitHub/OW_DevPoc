@@ -82,6 +82,7 @@ jobs:
       - name: Convert Metadata
         run: sfdx force:source:convert --manifest=changed-sources/package/package.xml --outputdir=convert
 
+      # linux script
       - name: Get Test Classes
         run: |
           for entry in "$changed-sources"/*
